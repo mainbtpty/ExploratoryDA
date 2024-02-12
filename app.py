@@ -8,6 +8,7 @@ st.set_page_config(layout = "wide", page_icon = 'logo.png', page_title='EDA')
 
 st.header("🎨Exploratory Data Analysis Tool for Data Science Projects")
 
+
 st.write('<p style="font-size:160%">You will be able to✅:</p>', unsafe_allow_html=True)
 
 st.write('<p style="font-size:100%">&nbsp 1. See the whole dataset</p>', unsafe_allow_html=True)
@@ -32,6 +33,7 @@ if use_defo:
     dataset = 'CarPrice_Assignment.csv'
 
 st.sidebar.header('Import Dataset to Use Available Features: 👉')
+st.sidebar.write("Build By Charles K Oni")
 
 if dataset:
     if file_format == 'csv' or use_defo:
