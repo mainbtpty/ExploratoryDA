@@ -22,6 +22,10 @@ st.write('<p style="font-size:100%">&nbsp 8. Get outlier analysis with box plots
 st.write('<p style="font-size:100%">&nbsp 9. Obtain info of target value variance with categorical columns</p>', unsafe_allow_html=True)
 #st.image('header2.png', use_column_width = True)
 
+ # Create a sidebar navigation menu
+#menu = st.sidebar.radio("Navigation", ["Home", "Contact Us"])
+
+
 functions.space()
 st.write('<p style="font-size:130%">Import Dataset</p>', unsafe_allow_html=True)
 
@@ -200,3 +204,6 @@ if dataset:
                     for i in high_cardi_columns:
                         fig = px.box(df_1, y = target_column, color = i)
                         st.plotly_chart(fig, use_container_width = True)
+                        # Create a sidebar navigation menu
+
+
