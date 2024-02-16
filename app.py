@@ -4,9 +4,11 @@ import plotly.express as px
 
 import functions
 
-
+# Configure Streamlit page
+st.set_page_config(layout="wide", page_icon='logo.png', page_title='EDA')
 
 # Define functions for different pages
+
 
 def main_page():
     st.header("🎨Exploratory Data Analysis Tool for Data Science Projects")
@@ -22,9 +24,9 @@ def main_page():
     st.write('<p style="font-size:100%">&nbsp 8. Get outlier analysis with box plots</p>', unsafe_allow_html=True)
     st.write('<p style="font-size:100%">&nbsp 9. Obtain info of target value variance with categorical columns</p>', unsafe_allow_html=True)
 
-# Configure Streamlit page
-st.set_page_config(layout="wide", page_icon='logo.png', page_title='EDA')
+
 functions.space()
+st.write('<p style="font-size:130%">EDA Tool for Data Science Projects</p>', unsafe_allow_html=True)
 st.write('<p style="font-size:130%">Import Dataset</p>', unsafe_allow_html=True)
 
 file_format = st.radio('Select file format:', ('csv', 'excel'), key='file_format')
@@ -208,7 +210,7 @@ if dataset:
 
 
 def contact_us_page():
-    st.markdown("<h1 style='text-align: center;'>Contact Us</h1>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center;'>Contact The Developer</h1>", unsafe_allow_html=True)
     st.write("Use the form below to get in touch with us.")
     st.write('<iframe src="https://formsubmit.co/el/jidexe" width="800" height="600"></iframe>', unsafe_allow_html=True)
 
