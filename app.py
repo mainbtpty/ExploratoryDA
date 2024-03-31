@@ -7,10 +7,13 @@ import functions
 # Configure Streamlit page
 st.set_page_config(layout="wide", page_icon='logo.png', page_title='EDA')
 
+
+
 # Define functions for different pages
 
 
 def main_page():
+    
     st.header("🎨Exploratory Data Analysis Tool for Data Science Projects")
     st.write('<p style="font-size:160%">You will be able to✅:</p>', unsafe_allow_html=True)
     # List other functionalities...
@@ -23,6 +26,17 @@ def main_page():
     st.write('<p style="font-size:100%">&nbsp 7. See count plot of categorical columns</p>', unsafe_allow_html=True)
     st.write('<p style="font-size:100%">&nbsp 8. Get outlier analysis with box plots</p>', unsafe_allow_html=True)
     st.write('<p style="font-size:100%">&nbsp 9. Obtain info of target value variance with categorical columns</p>', unsafe_allow_html=True)
+
+    st.write(""" 
+    [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee--yellow.svg?logo=buy-me-a-coffee&logoColor=orange&style=social)](https://www.buymeacoffee.com/charlion) """)  # Adjust the URL as needed
+
+
+
+
+# Adding Buy Me A Coffee button to the sidebar
+st.sidebar.write(""" 
+    [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee--yellow.svg?logo=buy-me-a-coffee&logoColor=orange&style=social)](https://www.buymeacoffee.com/charlion) """)  # Adjust the URL as needed
+
 
 
 functions.space()
@@ -213,10 +227,20 @@ def contact_us_page():
     st.markdown("<h2 style='text-align: center;'>Contact The Developer</h1>", unsafe_allow_html=True)
     st.write("Use the form below to get in touch with us.")
     st.write('<iframe src="https://formsubmit.co/el/jidexe" width="800" height="600"></iframe>', unsafe_allow_html=True)
+    st.write(""" 
+    [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee--yellow.svg?logo=buy-me-a-coffee&logoColor=orange&style=social)](https://www.buymeacoffee.com/charlion) """)  # Adjust the URL as needed
+
+
+
+
+    st.sidebar.write(""" 
+    [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee--yellow.svg?logo=buy-me-a-coffee&logoColor=orange&style=social)](https://www.buymeacoffee.com/charlion) """)  # Adjust the URL as needed
+
+
 
 
 # Create sidebar navigation menu
-menu = st.sidebar.radio("Navigation", ["Home", "Contact Us"])
+menu = st.sidebar.radio("Navigation", ["Home", "Contact Us", ])
 
 # Display different pages based on user selection
 if menu == "Home":
