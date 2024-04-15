@@ -32,10 +32,23 @@ def main_page():
 
 
 
+    
+    # Add the Hit Counters at the end of the main page
+    st.markdown("""
+        <!-- Histats.com  START (html only)-->
+        <a href="/" alt="page hit counter" target="_blank" >
+        <embed src="//s10.histats.com/13.swf"  flashvars="jver=1&acsid=4861133&domi=4"  quality="high"  width="180" height="50" name="13.swf"  align="middle" type="application/x-shockwave-flash" pluginspage="//www.macromedia.com/go/getflashplayer" wmode="transparent" /></a>
+        <img  src="//sstatic1.histats.com/0.gif?4861133&101" alt="site stats free" border="0">
+        <!-- Histats.com  END  -->
+    """, unsafe_allow_html=True)
+
+
+
 
 # Adding Buy Me A Coffee button to the sidebar
 st.sidebar.write(""" 
     [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee--yellow.svg?logo=buy-me-a-coffee&logoColor=orange&style=social)](https://www.buymeacoffee.com/charlion) """)  # Adjust the URL as needed
+
 
 
 
@@ -230,11 +243,21 @@ def contact_us_page():
     st.write(""" 
     [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee--yellow.svg?logo=buy-me-a-coffee&logoColor=orange&style=social)](https://www.buymeacoffee.com/charlion) """)  # Adjust the URL as needed
 
+    # Add the Hit Counters at the beginning
+    st.markdown("""
+        <!-- Histats.com  START (html only)-->
+        <a href="/" alt="page hit counter" target="_blank" >
+        <embed src="//s10.histats.com/13.swf"  flashvars="jver=1&acsid=4861133&domi=4"  quality="high"  width="180" height="50" name="13.swf"  align="middle" type="application/x-shockwave-flash" pluginspage="//www.macromedia.com/go/getflashplayer" wmode="transparent" /></a>
+        <img  src="//sstatic1.histats.com/0.gif?4861133&101" alt="site stats free" border="0">
+        <!-- Histats.com  END  -->
+    """, unsafe_allow_html=True)
+
 
 
 
     st.sidebar.write(""" 
     [![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee--yellow.svg?logo=buy-me-a-coffee&logoColor=orange&style=social)](https://www.buymeacoffee.com/charlion) """)  # Adjust the URL as needed
+
 
 
 
